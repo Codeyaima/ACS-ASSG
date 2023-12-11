@@ -1,0 +1,157 @@
+body {
+    background: linear-gradient(45deg, rgb(59, 7, 163), #000); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* White text color */
+}
+
+.registration-container {
+    max-width: 80%;
+    padding: 10px;
+    border: 2px solid #008000; /* Green border */
+    border-radius: 20px; /* Increased border-radius */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    color: #000000; /* Black text color */
+}
+
+.registration-form {
+    flex: 1;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px; /* Adjusted border-radius */
+    max-width: 100%;
+    overflow: auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ffffff; /* White focus color */
+}
+
+.form-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.form-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    color: #ffffff; /* White text color on hover */
+    transform: scale(1.05); /* Zoom up on hover */
+}
+
+.password-strength-meter {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.password-strength-label {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #333; 
+    visibility: visible; /* Ensure visibility is set to visible */
+}
+
+.password-policy {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.required-field {
+    color: red;
+    margin-left: 3px;
+}
+
+.additional-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.image-container {
+    height: 10%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Display the image at its original size */
+    border-radius: 15px;
+}
+
+.policy-container {
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    border-radius: 15px; /* Adjusted border-radius */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.already-member {
+    color: #4caf50; /* Green font color for "Already a member?" */
+}
+
+@media screen and (max-width: 768px) {
+    .registration-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .registration-form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .additional-container {
+        margin-left: 0;
+    }
+
+    .image-container,
+    .policy-container {
+        height: auto;
+    }
+    .form-btn {
+        font-size: 14px;
+    }
+}
